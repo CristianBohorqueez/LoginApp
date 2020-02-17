@@ -6,6 +6,7 @@ if (isset($_SESSION['user_id'])) {
 	header('Location: /LoginApp');
 }
 
+
 require 'database.php';
 
 if (!empty($_POST['email']) && !empty($_POST['password'])) {
