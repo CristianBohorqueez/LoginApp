@@ -55,7 +55,6 @@ if (isset($_SESSION['user_id'])) {
 	<?php require 'partials/header.php' ?>
 
 	<?php if (!empty($user)) : ?>
-
 		<div class="limiter">
 			<div class="container-login100">
 				<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
