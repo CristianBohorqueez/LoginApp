@@ -50,6 +50,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
@@ -69,33 +70,65 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                         Sign-Up
                     </span>
                     <span class="txt1 p-b-11">
-                        Username
+                        Email
                     </span>
-                    <div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+                    <div class="wrap-input100 validate-input m-b-36" data-validate="Username is required">
                         <input class="input100" type="text" name="email" placeholder="Enter your username">
                         <span class="focus-input100"></span>
                     </div>
                     <span class="txt1 p-b-11">
                         Password
                     </span>
-                    <div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required" >
+                    <div class="wrap-input100 validate-input m-b-36" data-validate="Password is required">
                         <span class="btn-show-pass">
                             <i class="fa fa-eye"></i>
                         </span>
                         <input class="input100" type="password" name="password" placeholder="Enter your password">
                         <span class="focus-input100"></span>
                     </div>
-                    
+
                     <span class="txt1 p-b-11">
                         Confirm Password
                     </span>
-                    <div class="wrap-input100 validate-input m-b-12">
+                    <div class="wrap-input100 validate-input m-b-36">
                         <span class="btn-show-pass">
                             <i class="fa fa-eye"></i>
                         </span>
                         <input class="input100" type="password" name="password" placeholder="Confirm your password">
                         <span class="focus-input100"></span>
                     </div>
+                    <span class="txt1 p-b-11">
+                        Select Datetime
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-36">
+                        <input class="input100" type="date" value="2011-08-19" id="example-date-input" name="datetime">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <span class="txt1 p-b-11">
+                        Address
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-36 ">
+                        <input type="text" class="input100" id="inputAddress" placeholder="1234 Main St">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <span class="txt1 p-b-11">
+                        Phone
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-36 ">
+                    <input class="input100" type="tel" id="example-tel-input" placeholder="1-(555)-555-5555">
+                        <span class="focus-input100"></span>
+                    </div>
+                    
+                    <span class="txt1 p-b-11">
+                        Select range
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-36 ">
+                        <input type="range" class="input100" id="formControlRange">
+                        <span class="focus-input100"></span>
+                    </div>
+
                     <button type="submit" class="login100-form-btn">
                         Send
                     </button>
@@ -104,7 +137,6 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
         </div>
     </div>
 
-
     <div id="dropDownSelect1"></div>
 
     <!--===============================================================================================-->
@@ -112,8 +144,9 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     <!--===============================================================================================-->
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--===============================================================================================-->
     <script src="vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->

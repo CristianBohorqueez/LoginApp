@@ -5,5 +5,5 @@
 
   session_destroy();
 
-  header('Location: /login-styles');
+  header('Location: /LoginApp');
 ?>

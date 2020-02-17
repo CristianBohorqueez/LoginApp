@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_SESSION['user_id'])) {
-	header('Location: /login-styles');
+	header('Location: /LoginApp');
 }
 
 require 'database.php';
@@ -19,7 +19,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
 	if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
 		$_SESSION['user_id'] = $results['id'];
-		header('Location: /login-styles');
+		header('Location: /LoginApp');
 	} else {
 		$message = 'Sorry, Those credentials do not match';
 	}
