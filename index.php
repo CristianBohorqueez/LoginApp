@@ -17,6 +17,10 @@ if (isset($_SESSION['user_id'])) {
 	}
 }
 
+$records2 = $conn->prepare('SELECT * FROM `users`');
+$records2->execute();
+$results2 = $records2->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 
@@ -65,6 +69,20 @@ if (isset($_SESSION['user_id'])) {
 							<a class="login100-form-btn" href="logout.php">Cerrar Sesion</a>
 						</span>
 					</div>
+					<?php
+					foreach ($results2 as $data) {
+					?>
+						<h3>
+							<tr>
+								<td><?php echo $data['email']?></td>
+								<a href="delete.php">
+									<i class="fa fa-trash fa-2x" aria-hidden="true" style="color: red; left: 20px"></i>
+								</a>
+							</tr>
+						</h3>
+					<?php
+					}
+					?>
 				</div>
 			</div>
 		</div>
@@ -76,15 +94,15 @@ if (isset($_SESSION['user_id'])) {
 					<form class="login100-form validate-form flex-sb flex-w">
 						<span style="text-align: center" class="login100-form-title p-b-32">
 
-							Please Login or SignUp
+							Iniciar o Registrar
 						</span>
 						<span style="text-align: center" class="login100-form-title p-b-32">
 
 
 							<div class="container-login100-form-btn">
-								<a class="login100-form-btn" href="login.php">Login</a>
-								&nbsp; Or &nbsp;
-								<a class="login100-form-btn" href="singup.php">SingUp</a>
+								<a class="login100-form-btn" href="login.php">Iniciar</a>
+								&nbsp; O &nbsp;
+								<a class="login100-form-btn" href="singup.php">Registrar</a>
 							</div>
 						</span>
 

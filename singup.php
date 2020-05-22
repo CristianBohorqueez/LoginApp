@@ -90,7 +90,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                     <span class="txt1 p-b-11">
                         Confirm Password
                     </span>
-                    <div class="wrap-input100 validate-input m-b-36">
+                    <!-- <div class="wrap-input100 validate-input m-b-36">
                         <span class="btn-show-pass">
                             <i class="fa fa-eye"></i>
                         </span>
@@ -127,7 +127,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                     <div class="wrap-input100 validate-input m-b-36 ">
                         <input type="range" class="input100" id="formControlRange">
                         <span class="focus-input100"></span>
-                    </div>
+                    </div> -->
 
                     <button type="submit" class="login100-form-btn">
                         Send
